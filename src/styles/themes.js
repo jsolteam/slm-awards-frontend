@@ -5,10 +5,15 @@ export const theme = {
   },
   colors: {
     white: "#fff",
+    black: "#000",
     beer: "#ffb215",
     frenchGrey: "#bebebe",
     eminence: "#78259d",
     bleachedCedar80: "#2f1d37CC",
     darkLilac80: "#9574a3CC",
+    arylideYellow80: "#f6cc78cc",
+    sandyTaupe80: "#996b0ccc",
+    silverSand80: "#c1c1c1cc",
+    boulder80: "#757575cc"
   },
 };

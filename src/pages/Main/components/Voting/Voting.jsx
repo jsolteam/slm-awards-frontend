@@ -3,6 +3,12 @@ import { forwardRef } from "react";
 import * as Styles from "./Voting.styles";
 import { SidebarHandle } from "@components/Sidebar";
 import { Nominated } from "./components/Nominated/indes";
+import { Button } from "@components/ui/Button";
+import {
+  ButtonStyle,
+  ButtonVariant,
+} from "@components/ui/Button/Button.constants";
+import { NextSlide } from "@components/ui/NextSlide";
 
 const temp = [
   {
@@ -74,7 +80,7 @@ export const Voting = forwardRef(({ height }, ref) => {
         <SidebarHandle>
           {temp.map((el) => (
             <Nominated
-              key={el.name}
+              key={`${el.name}-${el.id}`}
               name={el.name}
               twitchLink={el.twitchLink}
               avatarUrl={el.avatarUrl}
@@ -82,6 +88,13 @@ export const Voting = forwardRef(({ height }, ref) => {
           ))}
         </SidebarHandle>
       </Styles.SidebarWrapper>
+      <Styles.Buttons>
+        <Button style={ButtonStyle.white} variant={ButtonVariant.medium}>
+          Предыдущая страница
+        </Button>
+        <Button variant={ButtonVariant.medium}>Следующая страница</Button>
+      </Styles.Buttons>
+      <NextSlide>вопрос-ответ</NextSlide>
     </Styles.Wrapper>
   );
 });

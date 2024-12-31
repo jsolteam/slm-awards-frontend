@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SectionWrapper } from "../../Main.styles";
+import { ButtonStyled } from "@components/ui/Button";
 
 export const Wrapper = styled.section`
   ${SectionWrapper};
@@ -33,6 +34,18 @@ export const Subtitle = styled.p`
 export const SidebarWrapper = styled.div`
   width: 100%;
   min-height: 335px;
+`;
 
-  padding-top: 59px;
+export const Buttons = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 25px;
+
+  width: 100%;
+  max-width: 352px;
+
+  ${ButtonStyled} {
+    width: 100%;
+  }
 `;

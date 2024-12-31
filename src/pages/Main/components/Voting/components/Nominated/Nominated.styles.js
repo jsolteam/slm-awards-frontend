@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Nominated = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 18px;
+`;
+
 export const Wrapper = styled.div`
   position: relative;
 
@@ -52,7 +59,13 @@ export const Title = styled.p`
 
   margin-bottom: 21px;
 `;
-export const Subtitle = styled.a`
+export const Link = styled.a`
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+`;
+
+export const LinkValue = styled.div`
   font-size: 7px;
   font-weight: 400;
   line-height: 8.53px;
