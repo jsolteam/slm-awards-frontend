@@ -15,6 +15,9 @@ export const Wrapper = styled.section`
 
   overflow: hidden;
 
+  padding: 163px 16px 9px;
+
+  row-gap: 66px;
 `;
 
 export const Line = styled.div`
@@ -31,15 +34,17 @@ export const Line = styled.div`
 `;
 export const TitleWrapper = styled.div`
   width: 100%;
+
+  flex: 1;
 `;
 
 export const Logo = styled.img`
   display: block;
 
-  width: 302px;
-  height: 289px;
+  width: 312px;
+  height: 297px;
 
-  margin: 0 auto;
+  margin: 0 auto -10px;
 `;
 
 export const Title = styled.h1`
@@ -58,7 +63,7 @@ export const Support = styled.div``;
 export const SupportTitle = styled.p`
   color: ${({ theme }) => theme.colors.beer};
 
-  margin-bottom: 16px;
+  margin-bottom: 21px;
 
   font-size: 16px;
   font-weight: 600;

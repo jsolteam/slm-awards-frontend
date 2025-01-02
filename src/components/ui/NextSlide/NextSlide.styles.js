@@ -6,7 +6,7 @@ export const NextSlide = styled.div`
   align-items: center;
 
   row-gap: 4px;
-  
+
   z-index: 1;
 `;
 

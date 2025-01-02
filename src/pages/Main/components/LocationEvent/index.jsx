@@ -1,1 +1,0 @@
-export { LocationEvent } from "./LocationEvent";

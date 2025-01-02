@@ -9,7 +9,7 @@ import { forwardRef, useMemo } from "react";
 import { useResizeListener } from "@hooks/useResizeListener";
 import { createLinerArray } from "./Preview.helpers";
 
-export const Preview = forwardRef(({ height }, ref) => {
+export const Preview = forwardRef((_, ref) => {
   const { width } = useResizeListener();
   const linerArray = useMemo(
     () =>
@@ -20,7 +20,7 @@ export const Preview = forwardRef(({ height }, ref) => {
   );
 
   return (
-    <Styles.Wrapper ref={ref} $height={height}>
+    <Styles.Wrapper ref={ref}>
       {linerArray.map((el, index) => (
         <Styles.Line key={`line-${el}`} $position={el} $index={index + 1} />
       ))}

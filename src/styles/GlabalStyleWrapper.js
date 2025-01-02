@@ -17,9 +17,6 @@ export const GlabalStyleWrapper = createGlobalStyle`
 
   html {
     background: linear-gradient(180deg, #b64100 0%, #000000 35%);
-
-    height: auto;
-
 }
 
   h1,
@@ -35,13 +32,6 @@ export const GlabalStyleWrapper = createGlobalStyle`
   body {
     font-family: ${({ theme }) => theme.fonts.montserrat};
     color: ${({ theme }) => theme.colors.white};
-
-    /* min-height: max-content; */
-
-    height: 100%;
-
-    overflow: hidden;
-
   }
 
   input,
@@ -57,10 +47,6 @@ export const GlabalStyleWrapper = createGlobalStyle`
     justify-content: space-between;
 
     flex-direction: column;
-
-    /* min-height: max-content; */
-
-    height: 100%;
   }
 
   a {

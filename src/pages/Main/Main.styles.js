@@ -12,7 +12,7 @@ export const SectionWrapper = css`
   align-items: center;
   justify-content: space-around;
 
-  height: ${({ $height }) => `${$height}px`};
+  min-height: 100vh;
 
   padding: 0 16px;
 

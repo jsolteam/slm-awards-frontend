@@ -12,18 +12,13 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperContent = styled.div`
-  position: absolute;
-
-  top: 0;
-  bottom: 0;
-
   display: flex;
   align-items: flex-start;
 
   column-gap: 21px;
 
   width: 100vh;
-  height: 100%;
+  min-height: 100%;
   max-height: min-content;
 
   z-index: 2;
