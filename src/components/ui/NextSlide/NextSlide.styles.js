@@ -4,6 +4,7 @@ export const NextSlide = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
 
   row-gap: 4px;
 

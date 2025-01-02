@@ -7,7 +7,7 @@ import { ButtonLinkStyled } from "@components/ui/Button";
 export const Wrapper = styled.section`
   ${SectionWrapper};
 
-  justify-content: flex-start;
+  justify-content: center;
 
   padding: 0;
 
@@ -24,13 +24,11 @@ export const Info = styled.div`
 
   flex-direction: column;
 
-  flex: 1;
-
-  padding: 110px 0 0;
+  padding: 100px 0 0;
 
   width: 100%;
 
-  margin-bottom: 96px;
+  margin: auto 0;
 `;
 
 export const SubtitleBold = styled.span`
@@ -46,11 +44,15 @@ export const Subtitle = styled.h2`
 
   padding: 0 24px;
 
-  margin-bottom: 56px;
+  margin-bottom: -10px;
 `;
 
 export const SidebarWrapper = styled.div`
+  display: flex;
+  align-items: center;
+
   width: 100%;
+  min-height: 335px;
 
   background-image: url(${Perdezh});
 
@@ -60,8 +62,6 @@ export const SidebarWrapper = styled.div`
 `;
 
 export const LocationEvent = styled.div`
-  flex: 1;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +69,9 @@ export const LocationEvent = styled.div`
   row-gap: 36px;
 
   width: 100%;
+
+  margin: auto 0;
+  padding-top: 14px;
 
   ${ButtonLinkStyled} {
     width: 100%;
