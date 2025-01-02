@@ -7,6 +7,7 @@ export const ButtonStyle = {
   beer: "beer",
   white: "white",
   eminence: "eminence",
+  irishGreen: "irishGreen",
 };
 
 export const ButtonType = {

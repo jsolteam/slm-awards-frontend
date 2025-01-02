@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import faqPreview from '@assets/img/faq-preview.png'
+import faqPreview from "@assets/img/faq-preview.png";
 
 import { SectionWrapper } from "../../Main.styles";
 
@@ -10,7 +10,6 @@ export const Wrapper = styled.section`
   background-image: url(${faqPreview});
 
   background-repeat: no-repeat;
-  
 `;
 
 export const TitleWrapper = styled.div`
@@ -37,4 +36,13 @@ export const TitleValueBold = styled.span`
 export const TitleLogo = styled.img`
   width: 100px;
   height: 100px;
+`;
+
+export const Questions = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 27px;
+
+  width: 100%;
 `;

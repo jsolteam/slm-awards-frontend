@@ -67,6 +67,22 @@ const ButtonStyles = {
       color: ${({ theme }) => theme.colors.white};
     }
   `,
+    [ButtonStyle.irishGreen]: css`
+    ${Wrapper} {
+      &::before {
+        background-color: ${({ theme }) => theme.colors.mediumGreen80};
+      }
+
+      &::after {
+        background-color: ${({ theme }) => theme.colors.deepGreen80};
+      }
+    }
+
+    ${Children} {
+      background-color: ${({ theme }) => theme.colors.irishGreen};
+      color: ${({ theme }) => theme.colors.white};
+    }
+  `,
 };
 
 const ButtonVariants = {

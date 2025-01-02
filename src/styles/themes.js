@@ -14,6 +14,11 @@ export const theme = {
     arylideYellow80: "#f6cc78cc",
     sandyTaupe80: "#996b0ccc",
     silverSand80: "#c1c1c1cc",
-    boulder80: "#757575cc"
+    boulder80: "#757575cc",
+    irishGreen: "#009622",
+    mediumGreen80: "#01b42a",
+    deepGreen80: '#016317cc',
+    grey: '#909090'
+
   },
 };
