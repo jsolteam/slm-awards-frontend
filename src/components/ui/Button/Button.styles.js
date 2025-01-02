@@ -51,6 +51,22 @@ const ButtonStyles = {
       color: ${({ theme }) => theme.colors.black};
     }
   `,
+  [ButtonStyle.eminence]: css`
+    ${Wrapper} {
+      &::before {
+        background-color: ${({ theme }) => theme.colors.bleachedCedar80};
+      }
+
+      &::after {
+        background-color: ${({ theme }) => theme.colors.darkLilac80};
+      }
+    }
+
+    ${Children} {
+      background-color: ${({ theme }) => theme.colors.eminence};
+      color: ${({ theme }) => theme.colors.white};
+    }
+  `,
 };
 
 const ButtonVariants = {
@@ -135,6 +151,15 @@ const ButtonVariants = {
 };
 
 export const Button = styled.button`
+  border: none;
+  outline: none;
+  background: none;
+
+  ${({ $style }) => ButtonStyles[$style]}
+  ${({ $variant }) => ButtonVariants[$variant]}
+`;
+
+export const ButtonLink = styled.a`
   border: none;
   outline: none;
   background: none;

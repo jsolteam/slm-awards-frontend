@@ -8,6 +8,7 @@ import { VotingPreview } from "./components/VotingPreview";
 
 import * as Styles from "./Main.styles";
 import { Voting } from "./components/Voting/Voting";
+import { FaqPreview } from "./components/FaqPreview";
 
 export const Main = () => {
   const { height } = useResizeListener();
@@ -27,6 +28,7 @@ export const Main = () => {
         height={height}
       />
       <Voting ref={(el) => (sectionsRef.current[4] = el)} height={height} />
+      <FaqPreview ref={(el) => (sectionsRef.current[5] = el)} height={height} />
     </Styles.Wrapper>
   );
 };

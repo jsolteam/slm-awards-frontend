@@ -6,4 +6,10 @@ export const ButtonVariant = {
 export const ButtonStyle = {
   beer: "beer",
   white: "white",
+  eminence: "eminence",
+};
+
+export const ButtonType = {
+  link: "link",
+  button: "button",
 };

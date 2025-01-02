@@ -1,3 +1,3 @@
 export { Button } from "./Button";
-export { Button as ButtonStyled } from "./Button.styles";
-export { ButtonStyle, ButtonVariant } from "./Button.constants";
+export { Button as ButtonStyled, ButtonLink as ButtonLinkStyled} from "./Button.styles";
+export { ButtonStyle, ButtonVariant, ButtonType } from "./Button.constants";

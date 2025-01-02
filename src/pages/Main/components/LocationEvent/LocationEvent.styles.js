@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import { SectionWrapper } from "../../Main.styles";
+import { ButtonLinkStyled } from "@components/ui/Button";
 
 export const Wrapper = styled.section`
   ${SectionWrapper};
 
   position: relative;
+
+  ${ButtonLinkStyled} {
+    width: 100%;
+    max-width: 352px;
+  }
 `;
 
 export const EmojiImage1 = styled.img`
