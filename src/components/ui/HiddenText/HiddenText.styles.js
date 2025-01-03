@@ -16,10 +16,14 @@ export const Title = styled.p`
 `;
 
 export const ArrowIcon = styled(ArrowAgle)`
-  width: 15px;
-  height: 15px;
+  width: 19px;
+  height: 19px;
+  min-width: 19px;
+  min-height: 19px;
 
   rotate: 90deg;
+
+  margin-right: 10px;
 `;
 
 export const Children = styled.div`
@@ -32,7 +36,7 @@ export const Wrapper = styled.div`
   width: 100%;
 
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 
   ${({ $isShow }) =>
     $isShow &&

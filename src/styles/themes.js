@@ -17,8 +17,9 @@ export const theme = {
     boulder80: "#757575cc",
     irishGreen: "#009622",
     mediumGreen80: "#01b42a",
-    deepGreen80: '#016317cc',
-    grey: '#909090'
-
+    deepGreen80: "#016317cc",
+    grey: "#909090",
+    martini: "#a6a6a6",
+    smokeyGrey: "#737373",
   },
 };
