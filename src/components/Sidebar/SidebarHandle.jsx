@@ -12,27 +12,6 @@ export const SidebarHandle = ({ children }) => {
 
   const moveSlide = useCallback(
     (deltaY, isScroll = false) => {
-      // if (currentIndex + deltaY < maxScrollLeft && currentIndex + deltaY > 0) {
-      //   setCurrentIndex((state) => state + deltaY);
-      //   ref.current.scrollTo({
-      //     top: 0,
-      //     left: currentIndex + deltaY,
-      //     behavior: isScroll ? "smooth" : undefined,
-      //   });
-      // } else if (currentIndex + deltaY <= 0) {
-      //   ref.current.scrollTo({
-      //     top: 0,
-      //     left: 0,
-      //     behavior: isScroll ? "smooth" : undefined,
-      //   });
-      // } else if (currentIndex + deltaY >= maxScrollLeft) {
-      //   ref.current.scrollTo({
-      //     top: 0,
-      //     left: maxScrollLeft,
-      //     behavior: isScroll ? "smooth" : undefined,
-      //   });
-      // }
-
       ref.current.scrollTo(
         getMoveSlideState({
           currentIndex,
