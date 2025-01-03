@@ -6,6 +6,8 @@ export const Button = ({
   variant = ButtonVariant.small,
   style = ButtonStyle.beer,
   type = ButtonType.button,
+  onClick,
+  disabled,
 }) => {
   if (type === ButtonType.link) {
     return (
@@ -18,7 +20,13 @@ export const Button = ({
   }
 
   return (
-    <Styles.Button $variant={variant} $style={style} type="button">
+    <Styles.Button
+      $variant={variant}
+      $style={style}
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+    >
       <Styles.Wrapper>
         <Styles.Children>{children}</Styles.Children>
       </Styles.Wrapper>

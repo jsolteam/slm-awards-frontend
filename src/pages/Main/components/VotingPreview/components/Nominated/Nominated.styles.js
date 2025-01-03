@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
   width: 166px;
 
-  padding: 22px 16px 35px;
+  padding: 22px 16px 26px;
 
   &::before {
     content: "";

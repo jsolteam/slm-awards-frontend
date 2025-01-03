@@ -6,9 +6,12 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
 
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: clip;
 
-  z-index: 1;
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
 `;
 
 export const WrapperContent = styled.div`
@@ -54,4 +57,6 @@ export const ContentSidebarHandle = styled.div`
   column-gap: 21px;
 
   min-width: max-content;
+
+  margin: 0 16px;
 `;
